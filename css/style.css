@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+.navbar {
+    width: 100%;
+    padding: 24px 6%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #111111;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+    .nav-links a {
+        color: #111111;
+        text-decoration: none;
+    }
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .hero h1 {
+        font-size: 72px;
+    }
+
+.hero-slogan {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.button {
+    padding: 14px 28px;
+    border: 2px solid #111111;
+    text-decoration: none;
+    color: #111111;
+}
+
+.button-primary {
+    background: #111111;
+    color: #ffffff;
+}
+
+.section {
+    min-height: 60vh;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+    .section h2 {
+        font-size: 42px;
+        margin-bottom: 25px;
+    }
+
+.footer {
+    padding: 50px;
+    text-align: center;
+}

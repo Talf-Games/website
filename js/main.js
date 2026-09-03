@@ -1,25 +1,3 @@
-//const menuToggle = document.getElementById("menuToggle");
-//const navLinks = document.getElementById("navLinks");
-
-//menuToggle.addEventListener("click", function () {
-
-//    navLinks.classList.toggle("open");
-//    menuToggle.classList.toggle("open");
-
-//});
-
-
-//document.querySelectorAll(".nav-link").forEach(function (link) {
-
-//    link.addEventListener("click", function () {
-
-//        navLinks.classList.remove("open");
-//        menuToggle.classList.remove("open");
-
-//    });
-
-//});
-
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 const navItems = document.querySelectorAll(".nav-link");
@@ -48,6 +26,45 @@ navItems.forEach((item) => {
             "aria-expanded",
             "false"
         );
+
+    });
+
+});
+
+
+const gameFilters = document.querySelectorAll(".game-filter");
+const gameItems = document.querySelectorAll(".game-item");
+
+gameFilters.forEach(function (filterButton) {
+
+    filterButton.addEventListener("click", function () {
+
+        const selectedFilter = filterButton.dataset.filter;
+
+
+        // Active button
+        gameFilters.forEach(function (button) {
+            button.classList.remove("active");
+        });
+
+        filterButton.classList.add("active");
+
+
+        // Games
+        gameItems.forEach(function (game) {
+
+            const gameStatus = game.dataset.status;
+
+            if (
+                selectedFilter === "all" ||
+                selectedFilter === gameStatus
+            ) {
+                game.style.display = "";
+            } else {
+                game.style.display = "none";
+            }
+
+        });
 
     });
 

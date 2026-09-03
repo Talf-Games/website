@@ -643,12 +643,1628 @@ html {
             transform: translateY(-7px) rotate(-45deg);
         }
     }
-
-
-
 }
 
 
-    
+
+/* ========================================
+   GAMES SECTION 
+======================================== */
+
+/*.games-section {
+    width: 100%;
+    padding: 100px 5% 110px;
+    background: #ffffff;
+    color: #111111;
+}
+
+.games-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}*/
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+/*.games-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.games-title {
+    margin: 0;
+    font-family: "Amatic SC", sans-serif;
+    font-size: clamp(70px, 6vw, 96px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+    .games-title::after {
+        content: "★";
+        display: block;
+        margin-top: 10px;
+        font-family: "Manrope", sans-serif;
+        font-size: 12px;
+    }
+
+.games-intro {
+    max-width: 650px;
+    margin: 20px auto 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #444;
+}*/
+
+
+/* ========================================
+   FILTERS
+======================================== */
+
+/*.games-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 50px;
+}
+
+.game-filter {
+    min-width: 120px;
+    padding: 11px 22px;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+    background: transparent;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #111;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+    .game-filter:hover {
+        border-color: #111;
+        transform: translateY(-1px);
+    }
+
+    .game-filter.active {
+        background: #111;
+        color: #fff;
+        border-color: #111;
+    }*/
+
+
+/* ========================================
+   FEATURED GAME
+======================================== */
+
+/*.featured-game {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    min-height: 470px;
+    margin-bottom: 45px;
+    border: 1px solid #d8d8d8;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+.featured-game-image {
+    min-height: 470px;
+    overflow: hidden;
+}
+
+    .featured-game-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+.featured-game:hover .featured-game-image img {
+    transform: scale(1.025);
+}*/
+
+
+/* Featured text */
+
+/*.featured-game-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 55px;
+}
+
+
+.featured-label {
+    width: fit-content;
+    margin-bottom: 18px;
+    padding: 7px 14px;
+    background: #111;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.featured-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.game-title {
+    margin: 0;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+.game-status {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    border-radius: 30px;
+    background: #111;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+
+.game-genre {
+    margin: 13px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+}
+
+
+.game-description {
+    max-width: 520px;
+    margin: 24px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #444;
+}*/
+
+
+/* Game details */
+
+/*.game-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e1e1;
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    color: #444;
+}
+
+.detail-divider {
+    width: 1px;
+    height: 15px;
+    background: #ccc;
+}*/
+
+
+/* Featured buttons */
+
+/*.featured-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 28px;
+}
+
+
+.game-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 13px 22px;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.game-button-primary {
+    background: #111;
+    color: #fff;
+    border: 1px solid #111;
+}
+
+    .game-button-primary:hover {
+        background: #2a2a2a;
+        transform: translateY(-2px);
+    }
+
+
+.game-text-link {
+    position: relative;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #111;
+    text-decoration: none;
+}
+
+    .game-text-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 1px;
+        background: #111;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.25s ease;
+    }
+
+    .game-text-link:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }*/
+
+
+/* ========================================
+   GAME GRID
+======================================== */
+
+/*.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #d8d8d8;
+    border-radius: 16px;
+    background: #fff;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+    .game-card:hover {
+        transform: translateY(-5px);
+        border-color: #aaa;
+    }*/
+
+
+/* Image */
+
+/*.game-card-image {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+
+    .game-card-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+.game-card:hover .game-card-image img {
+    transform: scale(1.035);
+}
+
+
+.game-card-status {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 6px 11px;
+    background: #111;
+    color: #fff;
+    border-radius: 30px;
+    font-family: "Manrope", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}*/
+
+
+/* Content */
+
+/*.game-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+}
+
+
+.game-card-title {
+    margin: 0;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+.game-card-genre {
+    margin: 8px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+.game-card-description {
+    margin: 18px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #555;
+}
+
+
+.game-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: auto;
+    padding-top: 22px;
+}
+
+
+.game-date {
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    color: #555;
+}
+
+
+.game-card-link {
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #111;
+    text-decoration: none;
+}
+
+    .game-card-link:hover {
+        text-decoration: underline;
+    }*/
+
+/* ========================================
+   GAMES RESPONSIVE
+======================================== */
+
+/*@media (max-width: 1100px) {
+
+    .games-section {
+        padding: 80px 6% 90px;
+    }
+
+
+    .featured-game {
+        grid-template-columns: 1fr;
+    }
+
+
+    .featured-game-image {
+        min-height: 400px;
+        height: 400px;
+    }
+
+
+    .featured-game-content {
+        padding: 45px;
+    }
+
+
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .games-section {
+        padding: 65px 24px 75px;
+    }
+
+
+    .games-title {
+        font-size: 72px;
+    }
+
+
+    .games-intro {
+        font-size: 15px;
+    }
+
+
+    .games-filters {
+        margin-bottom: 35px;
+    }
+
+
+    .game-filter {
+        min-width: 0;
+        padding: 10px 16px;
+    }
+
+
+    .featured-game-image {
+        height: 330px;
+        min-height: 330px;
+    }
+
+
+    .featured-game-content {
+        padding: 32px;
+    }
+
+
+    .featured-title-row {
+        align-items: flex-start;
+    }
+
+
+    .game-title {
+        font-size: 48px;
+    }
+
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .game-card-image {
+        height: 280px;
+    }
+}
+
+
+
+@media (max-width: 520px) {
+
+    .games-section {
+        padding: 55px 18px 65px;
+    }
+
+
+    .games-filters {
+        gap: 8px;
+    }
+
+
+    .game-filter {
+        font-size: 11px;
+        padding: 9px 13px;
+    }
+
+
+    .featured-game {
+        border-radius: 12px;
+    }
+
+
+    .featured-game-image {
+        height: 270px;
+        min-height: 270px;
+    }
+
+
+    .featured-game-content {
+        padding: 25px 22px;
+    }
+
+
+    .featured-title-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .game-title {
+        font-size: 43px;
+    }
+
+
+    .game-description {
+        font-size: 14px;
+    }
+
+
+    .featured-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+
+    .game-card-image {
+        height: 230px;
+    }
+}*/
+
+
+/* ========================================
+   COMING SOON
+======================================== */
+
+/*.games-section {
+    width: 100%;
+    padding: 100px 5% 110px;
+    background: #f5f5f5;*/ /* önce beyazdı */
+    /*color: #111111;
+}
+
+.coming-soon-card {
+    width: 100%;
+    min-height: 520px;
+    margin: 50px 0 0;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    border: 1px solid #d3d3d3;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+}
+
+.coming-soon-content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    background: #fcfcfc;
+}
+
+.coming-soon-card {
+    width: 100%;
+    min-height: 520px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    border: 1px solid #d8d8d8;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.coming-soon-image {
+    height: 520px;
+    overflow: hidden;
+}
+
+    .coming-soon-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+.coming-soon-card:hover .coming-soon-image img {
+    transform: scale(1.025);
+}
+
+.coming-soon-content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.coming-soon-label {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-bottom: 24px;
+    border-radius: 30px;
+    background: #111;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.coming-soon-title {
+    margin: 0;
+    font-family: "Amatic SC", sans-serif;
+    font-size: clamp(55px, 5vw, 78px);
+    font-weight: 700;
+    line-height: 1;
+    color: #111;
+}
+
+
+.coming-soon-description {
+    max-width: 570px;
+    margin: 25px auto 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #444;
+}
+
+
+.coming-soon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 32px;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    text-decoration: none;
+}
+
+
+    .coming-soon-link span {
+        transition: transform 0.2s ease;
+    }
+
+
+    .coming-soon-link:hover span {
+        transform: translateX(5px);
+    }
+
+
+.coming-soon-decoration {
+    position: absolute;
+    top: 35px;
+    right: 45px;
+    font-size: 18px;
+    transform: rotate(15deg);
+}
+
+
+
+@media (max-width: 768px) {
+
+    .coming-soon-card {
+        min-height: 380px;
+        margin-top: 35px;
+        padding: 55px 25px;
+    }
+
+    .coming-soon-title {
+        font-size: 58px;
+    }
+
+    .coming-soon-description {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .coming-soon-card {
+        min-height: 340px;
+        padding: 45px 20px;
+        border-radius: 14px;
+    }
+
+    .coming-soon-title {
+        font-size: 50px;
+    }
+
+    .coming-soon-decoration {
+        top: 22px;
+        right: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .coming-soon-card {
+        grid-template-columns: 1fr;
+    }
+
+    .coming-soon-image {
+        min-height: 380px;
+    }
+
+    .coming-soon-content {
+        padding: 45px 30px;
+        align-items: center;
+        text-align: center;
+    }
+}*/
+
+
+
+/* ========================================
+   GAMES SECTION
+======================================== */
+
+.games-section {
+    width: 100%;
+    padding: 100px 5% 110px;
+    color: #111111;
+}
+
+.games-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   COMING SOON CARD
+======================================== */
+
+.coming-soon-card {
+    width: 100%;
+    min-height: 520px;
+    margin: 50px 0 0;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    border: 1px solid #d3d3d3;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 0 18px 45px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ========================================
+   COMING SOON IMAGE
+======================================== */
+
+.coming-soon-image {
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+
+    .coming-soon-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+
+    /* Çok hafif siyah katman */
+
+    .coming-soon-image::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+    }
+
+
+/* Hafif hover */
+
+.coming-soon-card:hover .coming-soon-image img {
+    transform: scale(1.02);
+}
+
+
+/* ========================================
+HEADER
+======================================== */
+/*.games-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.games-title {
+    margin: 0;
+    font-family: "Amatic SC", sans-serif;
+    font-size: clamp(70px, 6vw, 96px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+    .games-title::after {
+        content: "★";
+        display: block;
+        margin-top: 10px;
+        font-family: "Manrope", sans-serif;
+        font-size: 12px;
+    }
+
+.games-intro {
+    max-width: 650px;
+    margin: 20px auto 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #444;
+}*/
+
+
+.games-header {
+    width: 100%;
+    margin: 0 auto 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.games-title {
+    margin: 0;
+    font-family: "Amatic SC", sans-serif;
+    font-size: clamp(70px, 6vw, 96px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+    .games-title::after {
+        content: "★";
+        display: block;
+        margin-top: 10px;
+        /*font-family: "Manrope", sans-serif;*/
+        font-size: 12px;
+    }
+
+.games-intro {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: center;
+    color: #444;
+}
+
+
+/* ========================================
+   COMING SOON CONTENT
+======================================== */
+.coming-soon-content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    background: #fcfcfc;
+}
+
+
+.coming-soon-label {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-bottom: 24px;
+    border-radius: 30px;
+    background: #111111;
+    color: #ffffff;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.coming-soon-title {
+    margin: 0;
+    font-family: "Amatic SC", sans-serif;
+    font-size: clamp(55px, 5vw, 78px);
+    font-weight: 700;
+    line-height: 1;
+    color: #111111;
+}
+
+
+.coming-soon-description {
+    max-width: 570px;
+    margin: 25px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #444444;
+}
+
+
+.coming-soon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 32px;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111111;
+    text-decoration: none;
+}
+
+
+    .coming-soon-link span {
+        transition: transform 0.2s ease;
+    }
+
+
+    .coming-soon-link:hover span {
+        transform: translateX(5px);
+    }
+
+
+/* ========================================
+   COMING SOON RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .coming-soon-card {
+        grid-template-columns: 1fr;
+    }
+
+    .coming-soon-image {
+        height: 400px;
+    }
+
+    .coming-soon-content {
+        padding: 45px 35px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .coming-soon-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .coming-soon-card {
+        margin-top: 35px;
+        border-radius: 14px;
+    }
+
+    .coming-soon-image {
+        height: 300px;
+    }
+
+    .coming-soon-content {
+        padding: 38px 22px;
+    }
+
+    .coming-soon-title {
+        font-size: 52px;
+    }
+
+    .coming-soon-description {
+        font-size: 15px;
+    }
+}
+
+
+/* ========================================
+   SECTION TRANSITION
+======================================== */
+
+.section-transition {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background: linear-gradient( to bottom, #ffffff 0%, #ffffff 55%, #f5f5f5 100% );
+}
+
+.transition-line {
+    width: 75px;
+    height: 1px;
+    background: #111;
+    opacity: 0.25;
+}
+
+.transition-star {
+    font-size: 14px;
+    color: #111;
+    transform: rotate(12deg);
+}
+
+@media (max-width: 768px) {
+
+    .section-transition {
+        min-height: 100px;
+        gap: 12px;
+    }
+
+    .transition-line {
+        width: 45px;
+    }
+
+    .games-section {
+        padding-top: 55px;
+    }
+}
+
+
+/* ========================================
+   ABOUT TALF GAMES
+======================================== */
+
+.about-talf-section {
+    width: 100%;
+    padding: 110px 5% 120px;
+    background: #ffffff;
+    color: #111111;
+}
+
+
+.about-talf-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.about-talf-header {
+    max-width: 760px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+
+.about-talf-title {
+    margin: 0;
+    font-family: "Amatic SC", sans-serif;
+    font-size: clamp(70px, 6vw, 96px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+    .about-talf-title::after {
+        content: "★";
+        font-size: 12px;
+        margin-top: 10px;
+        display: block;
+    }
+
+
+    .about-talf-intro {
+        max-width: 700px;
+        margin: 22px auto 0;
+        font-family: "Manrope", sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: #333333;
+    }
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.about-talf-content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 55px;
+    background: #ffffff;
+    border: 1px solid #d8d8d8;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 0 20px 50px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ========================================
+   ILLUSTRATION
+======================================== */
+
+.about-talf-visual {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.about-talf-image {
+    width: 140%;
+    max-width: 760px;
+    height: auto;
+    display: block;
+}
+
+
+/* ========================================
+   VALUES
+======================================== */
+
+.about-talf-values {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+
+.about-value {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 26px;
+}
+
+
+/* Icon circle */
+
+.about-value-icon {
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f7f7f7;
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 42px;
+    color: #111111;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+
+.about-value:hover .about-value-icon {
+    transform: rotate(-4deg) scale(1.04);
+    background: #f1f1f1;
+}
+
+
+/* Logo icon */
+
+.about-value-logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+
+/* Text */
+
+.about-value-text h3 {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111111;
+}
+
+
+.about-value-text p {
+    max-width: 430px;
+    margin: 10px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: #444444;
+}
+
+/* ========================================
+   ABOUT TALF - TABLET
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .about-talf-section {
+        padding: 90px 6% 100px;
+    }
+
+
+    .about-talf-header {
+        margin-bottom: 55px;
+    }
+
+
+    .about-talf-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+
+    .about-talf-visual {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .about-talf-values {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+/* ========================================
+   ABOUT TALF - MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .about-talf-section {
+        padding: 65px 24px 80px;
+    }
+
+    .about-talf-container {
+        width: 100%;
+    }
+
+
+    /* HEADER */
+
+    .about-talf-header {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 45px;
+        text-align: center;
+    }
+
+    .about-talf-title {
+        font-size: clamp(70px, 6vw, 96px);
+        line-height: 1.05;
+    }
+
+    .about-talf-intro {
+        max-width: 420px;
+        margin: 20px auto 0;
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+
+    /* 
+       DESKTOPTA 2 KOLONDU.
+       MOBİLDE KESİNLİKLE TEK KOLON.
+    */
+
+    .about-talf-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+
+
+    /* GÖRSEL ÖNCE */
+
+    .about-talf-visual {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .about-talf-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transform: none;
+    }
+
+
+    /* VALUES SONRA */
+
+    .about-talf-values {
+        order: 2;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+
+    /* Mobilde ikon ve metin yan yana */
+
+    .about-value {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .about-value-icon {
+        width: 68px;
+        height: 68px;
+        font-size: 30px;
+    }
+
+    .about-value-logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .about-value-text h3 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.25;
+    }
+
+    .about-value-text p {
+        margin: 7px 0 0;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about-talf-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .about-talf-content {
+        gap: 38px;
+    }
+
+    .about-talf-values {
+        gap: 28px;
+    }
+
+    .about-value {
+        grid-template-columns: 62px 1fr;
+        gap: 16px;
+    }
+
+    .about-value-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+    }
+
+    .about-value-logo img {
+        width: 37px;
+        height: 37px;
+    }
+
+    .about-value-text h3 {
+        font-size: 18px;
+    }
+
+    .about-value-text p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+.site-footer {
+    width: 100%;
+    padding: 50px 5% 28px;
+    background: #111111;
+    color: #ffffff;
+    border-top: none;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.footer-title {
+    margin: 0 0 10px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: clamp(54px, 4vw, 72px);
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.footer-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #bdbdbd;
+}
+
+.footer-contact-row {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 18px;
+    background: #181818;
+    border: 1px solid #e5e5e5;
+    border: 1px solid #303030;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f3f3f3;
+    color: #111111;
+}
+
+    /* Lucide: mail + map-pin */
+    .footer-icon svg {
+        width: 22px;
+        height: 22px;
+        stroke: #111111;
+        stroke-width: 2.2;
+    }
+
+    /* Font Awesome: Discord */
+    .footer-icon i {
+        font-size: 21px;
+        color: #111111;
+    }
+
+.footer-label,
+.footer-value {
+    display: block;
+    font-family: "Manrope", sans-serif;
+}
+
+.footer-label {
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer-value {
+    font-size: 13px;
+    color: #bdbdbd;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+    .footer-socials a {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #303030;
+        border-radius: 50%;
+        background: #181818;
+        color: #ffffff;
+        text-decoration: none;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+        .footer-socials a:hover {
+            transform: translateY(-3px);
+            opacity: 0.65;
+        }
+
+.footer-bottom {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #303030;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    color: #888888;
+}
+
+
+@media (max-width: 700px) {
+
+    .site-footer {
+        padding: 45px 24px 24px;
+    }
+
+    .footer-contact-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-item {
+        padding: 14px 16px;
+    }
+}
+
+.footer-logo {
+    width: 52px;
+    height: 52px;
+    display: block;
+    margin: 0 auto 12px;
+    object-fit: contain;
+    filter: invert(1);
+}
 
 

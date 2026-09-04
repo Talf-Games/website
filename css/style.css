@@ -2153,14 +2153,6 @@ HEADER
     color: #111111;
 }
 
-    /* Lucide: mail + map-pin */
-    .footer-icon svg {
-        width: 22px;
-        height: 22px;
-        stroke: #111111;
-        stroke-width: 2.2;
-    }
-
     /* Font Awesome: Discord */
     .footer-icon i {
         font-size: 21px;
@@ -2401,4 +2393,15 @@ body {
 
 .site-footer {
     width: 100%;
+}
+
+
+/* =========================
+   STUDIO PAGE 
+========================= */
+
+
+
+.studio-hero-image {
+    width:100%
 }

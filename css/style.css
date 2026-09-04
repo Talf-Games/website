@@ -2401,7 +2401,21 @@ body {
 ========================= */
 
 
+.studio-main {
+    width: 100%;
+    overflow: hidden;
+}
 
 .studio-hero-image {
-    width:100%
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .studio-hero-image:hover {
+        transform: scale(1.015);
+    }
 }

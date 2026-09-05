@@ -2401,7 +2401,7 @@ body {
 ========================= */
 
 
-.studio-main {
+/*.studio-main {
     width: 100%;
     overflow: hidden;
 }
@@ -2418,4 +2418,465 @@ body {
     .studio-hero-image:hover {
         transform: scale(1.015);
     }
+}*/
+
+
+
+
+/* ========================================
+   STUDIO HERO
+======================================== */
+
+.studio-main {
+    width: 100%;
 }
+
+.studio-hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #111111;
+}
+
+.studio-hero-image {
+    width: 100%;
+    height: clamp(520px, 48vw, 1450px);
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* DARK GRADIENT FOR TEXT */
+
+.studio-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( 90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.48) 30%, rgba(0, 0, 0, 0.12) 60%, rgba(0, 0, 0, 0) 100% );
+    pointer-events: none;
+}
+
+
+/* TEXT */
+
+.studio-hero-content {
+    position: absolute;
+    left: 5%;
+    bottom: 4%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 560px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.studio-hero-label {
+    display: block;
+    margin-bottom: 18px;
+    font-family: "Manrope", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.studio-hero-title {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(46px, 4.6vw, 74px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    color: #ffffff;
+}
+
+.studio-hero-description {
+    max-width: 500px;
+    margin: 26px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(16px, 1.2vw, 21px);
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+@media (max-width: 1100px){
+
+    .studio-hero-content {
+        left: 5%;
+        bottom: -10%;
+        max-width: 500px;
+    }
+
+    .studio-hero-image {
+        height: 560px;
+    }
+}
+
+
+@media (min-width: 701px) and (max-width: 1500px) {
+
+    .studio-hero-content {
+        left: 5%;
+        bottom: -10%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .studio-hero {
+        min-height: 500px;
+    }
+
+    .studio-hero-image {
+        height: 500px;
+        object-position: 58% center;
+    }
+
+    .studio-hero-overlay {
+        background: linear-gradient( 0deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.42) 55%, rgba(0, 0, 0, 0.08) 100% );
+    }
+
+    .studio-hero-content {
+        left: 24px;
+        right: 24px;
+        top: auto;
+        bottom: 45px;
+        width: auto;
+        max-width: 520px;
+        transform: none;
+    }
+
+    .studio-hero-title {
+        font-size: 45px;
+    }
+
+    .studio-hero-description {
+        max-width: 430px;
+        font-size: 16px;
+    }
+    .studio-hero-label {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .studio-hero-image {
+        height: 440px;
+    }
+
+    .studio-hero-content {
+        left: 18px;
+        right: 18px;
+        bottom: 28px;
+    }
+
+    .studio-hero-label {
+        margin-bottom: 12px;
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+    .studio-hero-title {
+        font-size: 40px;
+    }
+
+    .studio-hero-description {
+        margin-top: 18px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+
+/* ========================================
+   STUDIO JOURNAL
+======================================== */
+
+.studio-journal {
+    width: 100%;
+    padding: 110px 6%;
+    background: #ffffff;
+}
+
+.studio-journal-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   JOURNAL ENTRY
+======================================== */
+
+.studio-entry {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 90px;
+    padding: 70px 0;
+}
+
+
+/* TEXT SIDE */
+
+.studio-entry-text {
+    width: 100%;
+    max-width: 560px;
+}
+
+.studio-entry-number {
+    display: block;
+    margin-bottom: 18px;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #777777;
+}
+
+.studio-entry-title {
+    margin: 0 0 28px;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(38px, 3vw, 52px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: #111111;
+}
+
+.studio-entry-description {
+    max-width: 540px;
+    margin: 0 0 20px;
+    font-family: "Manrope", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: -0.2px;
+    color: #3d3d3d;
+}
+
+
+/* IMAGE SIDE */
+
+.studio-entry-visual {
+    width: 100%;
+    margin: 0;
+}
+
+.studio-entry-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #f5f5f5;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07), 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.studio-entry-image {
+    width: 100%;
+    height: clamp(340px, 32vw, 500px);
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+
+/* IMAGE HOVER */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .studio-entry-image-wrapper:hover .studio-entry-image {
+        transform: scale(1.02);
+    }
+}
+
+
+/* HANDWRITTEN CAPTION */
+
+.studio-entry-caption {
+    margin-top: 18px;
+    padding-right: 25px;
+    text-align: right;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #111111;
+}
+
+@media (max-width: 1100px) {
+
+    .studio-journal {
+        padding: 90px 6%;
+    }
+
+    .studio-entry {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 55px 0;
+    }
+
+    .studio-entry-visual {
+        order: 1;
+    }
+
+    .studio-entry-text {
+        order: 2;
+        max-width: 700px;
+    }
+
+    .studio-entry-image {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .studio-journal {
+        padding: 65px 24px 75px;
+    }
+
+    .studio-entry {
+        gap: 35px;
+        padding: 40px 0;
+    }
+
+    .studio-entry-number {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .studio-entry-title {
+        font-size: 38px;
+        margin-bottom: 22px;
+    }
+
+    .studio-entry-description {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .studio-entry-image-wrapper {
+        border-radius: 12px;
+    }
+
+    .studio-entry-caption {
+        padding-right: 10px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .studio-journal {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .studio-entry {
+        gap: 28px;
+    }
+
+    .studio-entry-title {
+        font-size: 34px;
+    }
+
+    .studio-entry-description {
+        font-size: 15px;
+    }
+
+    .studio-entry-caption {
+        font-size: 28px;
+    }
+}
+
+.studio-entry-reverse .studio-entry-text {
+    order: 2;
+}
+
+.studio-entry-reverse .studio-entry-visual {
+    order: 1;
+}
+
+.studio-entry-reverse {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+
+    .studio-entry-reverse .studio-entry-visual {
+        order: 1;
+    }
+
+    .studio-entry-reverse .studio-entry-text {
+        order: 2;
+    }
+
+/* ========================================
+   STUDIO JOURNAL - RESPONSIVE
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .studio-entry,
+    .studio-entry-reverse {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 45px;
+        padding: 55px 0;
+    }
+
+        /* Mobil/tablette her zaman görsel üstte */
+        .studio-entry .studio-entry-visual,
+        .studio-entry-reverse .studio-entry-visual {
+            order: 1;
+            width: 100%;
+        }
+
+        /* Metin her zaman görselin altında */
+        .studio-entry .studio-entry-text,
+        .studio-entry-reverse .studio-entry-text {
+            order: 2;
+            width: 100%;
+            max-width: 700px;
+        }
+
+    .studio-entry-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .studio-entry,
+    .studio-entry-reverse {
+        gap: 35px;
+        padding: 40px 0;
+    }
+
+        .studio-entry-text,
+        .studio-entry-reverse .studio-entry-text {
+            max-width: 100%;
+        }
+}
+
+.studio-entry {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 90px;
+}
+
+.studio-entry-reverse {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+
+    .studio-entry-reverse .studio-entry-visual {
+        order: 1;
+    }
+
+    .studio-entry-reverse .studio-entry-text {
+        order: 2;
+    }

@@ -121,7 +121,7 @@ body {
     grid-template-columns: 0.95fr 1.05fr;
     align-items: center;
     gap: 60px;
-    padding: 55px 60px;
+    padding-left: 80px;
     background: #ffffff;
     border: 1px solid #d3d3d3;
     border-radius: 18px;
@@ -435,6 +435,104 @@ html {
     .hero-image {
         width: 100%;
         max-width: 480px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 20px 14px 45px;
+    }
+
+    .hero-container {
+        gap: 24px;
+        padding: 28px 18px;
+        border-radius: 14px;
+    }
+
+    .hero-welcome {
+        margin-bottom: 20px;
+        font-size: 16px;
+        letter-spacing: 2.5px;
+    }
+
+    .hero-title {
+        max-width: 360px;
+        margin-bottom: 24px;
+        font-size: clamp(50px, 15vw, 60px);
+        line-height: 0.94;
+    }
+
+    .hero-description {
+        max-width: 340px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* ========================================
+   HERO - MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding: 24px 18px 50px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        width: 100%;
+        max-width: 100%;
+        padding: 32px 22px;
+        border-radius: 16px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-welcome {
+        margin: 0 0 24px;
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 3px;
+    }
+
+    .hero-title {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 0 28px;
+        font-size: clamp(52px, 14vw, 68px);
+        line-height: 0.95;
+        letter-spacing: 1px;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 390px;
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.65;
+        text-align: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+        margin-top: 4px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
 

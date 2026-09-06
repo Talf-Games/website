@@ -2461,7 +2461,7 @@ body {
 .studio-hero-content {
     position: absolute;
     left: 5%;
-    bottom: 4%;
+    bottom: 5%;
     transform: translateY(-50%);
     width: 100%;
     max-width: 560px;
@@ -2471,7 +2471,7 @@ body {
 
 .studio-hero-label {
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     font-family: "Manrope", sans-serif;
     font-size: 25px;
     font-weight: 700;
@@ -2491,11 +2491,11 @@ body {
 
 .studio-hero-description {
     max-width: 500px;
-    margin: 26px 0 0;
+    margin: 18px 0 0;
     font-family: "Manrope", sans-serif;
-    font-size: clamp(16px, 1.2vw, 21px);
+    font-size: clamp(16px, 1vw, 18px);
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.6;
     color: rgba(255, 255, 255, 0.82);
 }
 
@@ -2624,39 +2624,42 @@ body {
 
 .studio-entry-text {
     width: 100%;
-    max-width: 560px;
+    max-width: 540px;
+    transform: translateY(-42px);
 }
 
 .studio-entry-number {
     display: block;
     margin-bottom: 18px;
     font-family: "Manrope", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 2.5px;
-    color: #777777;
+    color: #585858;
 }
 
 .studio-entry-title {
     margin: 0 0 28px;
     font-family: "Manrope", sans-serif;
-    font-size: clamp(38px, 3vw, 52px);
+    font-size: clamp(38px, 3vw, 50px);
     font-weight: 700;
     line-height: 1.1;
-    color: #111111;
+    color: #222222;
 }
 
 .studio-entry-description {
     max-width: 540px;
-    margin: 0 0 20px;
+    margin: 0 0 14px;
     font-family: "Manrope", sans-serif;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 400;
     line-height: 1.8;
     letter-spacing: -0.2px;
-    color: #3d3d3d;
+    color: #272727;
 }
-
+    .studio-entry-description:last-child {
+        margin-bottom: 0;
+    }
 
 /* IMAGE SIDE */
 
@@ -2696,7 +2699,7 @@ body {
 /* HANDWRITTEN CAPTION */
 
 .studio-entry-caption {
-    margin-top: 18px;
+    margin-top: 8px;
     padding-right: 25px;
     text-align: right;
     font-family: "Amatic SC", sans-serif;

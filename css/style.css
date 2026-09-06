@@ -119,9 +119,9 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 0.95fr 1.05fr;
-    align-items: center;
-    gap: 60px;
-    padding-left: 80px;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
     background: #ffffff;
     border: 1px solid #d3d3d3;
     border-radius: 18px;
@@ -130,10 +130,12 @@ body {
 }
 
 .hero-text {
-    max-width: 520px;
+    width: 100%;
+    max-width: none;
+    padding: 60px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: center;
 }
 
 .hero-eyebrow {
@@ -175,16 +177,18 @@ body {
 
 
 .hero-visual {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
 }
 
 .hero-image {
     width: 100%;
-    max-width: 760px;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;
+    object-position: center;
     transition: transform 0.5s ease;
 }
 
@@ -2994,3 +2998,119 @@ body {
     .studio-entry-reverse .studio-entry-text {
         order: 2;
     }
+
+
+
+
+/*---------GÜNCEL HERO CSSLERİİ---------------------------*/
+
+
+
+
+.hero-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 0 20px 50px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+}
+
+.hero-text {
+    width: 100%;
+    max-width: none;
+    padding: 55px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-visual {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+
+.hero-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+
+@media (max-width: 1100px) {
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+        max-width: 850px;
+        padding: 0;
+    }
+
+    .hero-text {
+        padding: 45px 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .hero-container {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    .hero-text {
+        padding: 35px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-container {
+        border-radius: 14px;
+    }
+
+    .hero-text {
+        padding: 30px 18px;
+    }
+}

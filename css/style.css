@@ -298,7 +298,7 @@ body {
     max-width: 430px;
     margin: 40px 0 0;
     font-family: "Manrope", sans-serif;
-    font-size: clamp(17px, 2.3vw, 27px);
+    font-size: clamp(17px, 2.3vw, 22px);
     font-weight: 450;
     line-height: 1.7;
     letter-spacing: -0.3px;

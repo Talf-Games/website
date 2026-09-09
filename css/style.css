@@ -151,86 +151,13 @@ body {
         transition: transform 0.25s ease, opacity 0.2s ease;
     }
 
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 20px;
-    }
-
-    .navbar-container {
-        position: relative;
-        min-height: 64px;
-    }
-
-    .brand-logo {
-        width: 54px;
-        height: 54px;
-    }
-
-    .brand-name {
-        font-size: 34px;
-    }
-
-    .menu-toggle {
-        position: relative;
-        z-index: 1002;
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: calc(100% + 10px);
-        left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        padding: 14px;
-        background: #ffffff;
-        border: 1px solid rgba(0, 0, 0, 0.08);
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
-        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
-    }
-
-        .nav-links.open {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-
-    .nav-link {
-        width: 100%;
-        padding: 14px 10px;
-        font-size: 16px;
-        text-align: center;
-    }
-
-        .nav-link::after {
-            display: none;
-        }
-
-    .menu-toggle.open span:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
-    }
-
-    .menu-toggle.open span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.open span:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
-    }
-}
-
 
 /* ========================================
    HOME HERO / ABOUT US
 ======================================== */
 
 .hero {
-    padding: 70px 6% 90px;
+    padding: 70px 6% 120px;
     background: #ffffff;
 }
 
@@ -339,131 +266,6 @@ body {
 }
 
 
-@media (max-width: 1100px) {
-    .hero {
-        padding: 50px 6% 70px;
-    }
-
-    .hero-container {
-        grid-template-columns: 1fr;
-        max-width: 850px;
-        gap: 0;
-        padding: 0;
-    }
-
-    .hero-text {
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 45px 40px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero-welcome,
-    .hero-title,
-    .hero-description {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .hero-title,
-    .hero-description {
-        max-width: 620px;
-    }
-
-    .hero-visual,
-    .hero-image {
-        width: 100%;
-        max-width: none;
-    }
-
-    .hero-image {
-        height: auto;
-        object-fit: contain;
-    }
-}
-
-@media (max-width: 700px) {
-    html {
-        scroll-padding-top: 90px;
-    }
-
-    .hero {
-        padding: 24px 18px 50px;
-    }
-
-    .hero-container {
-        width: 100%;
-        max-width: 100%;
-        border-radius: 16px;
-    }
-
-    .hero-text {
-        max-width: 100%;
-        padding: 35px 24px;
-    }
-
-    .hero-welcome {
-        margin: 0 0 24px;
-        font-size: 18px;
-        line-height: 1.4;
-        letter-spacing: 3px;
-    }
-
-    .hero-title {
-        width: 100%;
-        max-width: 430px;
-        margin: 0 0 28px;
-        font-size: clamp(52px, 14vw, 68px);
-        line-height: 0.95;
-        letter-spacing: 1px;
-    }
-
-    .hero-description {
-        width: 100%;
-        max-width: 390px;
-        margin: 0;
-        font-size: 17px;
-        line-height: 1.65;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        padding: 20px 14px 45px;
-    }
-
-    .hero-container {
-        border-radius: 14px;
-    }
-
-    .hero-text {
-        padding: 30px 18px;
-    }
-
-    .hero-welcome {
-        margin-bottom: 20px;
-        font-size: 16px;
-        letter-spacing: 2.5px;
-    }
-
-    .hero-title {
-        max-width: 360px;
-        margin-bottom: 24px;
-        font-size: clamp(50px, 15vw, 60px);
-        line-height: 0.94;
-    }
-
-    .hero-description {
-        max-width: 340px;
-        font-size: 16px;
-        line-height: 1.6;
-    }
-}
-
-
 /* ========================================
    SECTION TRANSITION
 ======================================== */
@@ -488,17 +290,6 @@ body {
     font-size: 14px;
     color: #111111;
     transform: rotate(12deg);
-}
-
-@media (max-width: 700px) {
-    .section-transition {
-        min-height: 100px;
-        gap: 12px;
-    }
-
-    .transition-line {
-        width: 45px;
-    }
 }
 
 
@@ -654,60 +445,6 @@ body {
     }
 }
 
-@media (max-width: 1100px) {
-    .coming-soon-card {
-        grid-template-columns: 1fr;
-    }
-
-    /* Show the complete image on tablet/mobile instead of cropping it. */
-    .coming-soon-image {
-        height: auto;
-        min-height: 0;
-    }
-
-        .coming-soon-image img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-
-    .coming-soon-content {
-        padding: 45px 35px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .coming-soon-description {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (max-width: 700px) {
-    .games-section {
-        padding-top: 55px;
-    }
-}
-
-@media (max-width: 480px) {
-    .coming-soon-card {
-        margin-top: 35px;
-        border-radius: 14px;
-    }
-
-    .coming-soon-content {
-        padding: 38px 22px;
-    }
-
-    .coming-soon-title {
-        font-size: 52px;
-    }
-
-    .coming-soon-description {
-        font-size: 15px;
-    }
-}
-
 
 /* ========================================
    ABOUT TALF GAMES
@@ -849,170 +586,6 @@ body {
 @media (hover: hover) and (pointer: fine) {
     .about-talf-visual:hover .about-talf-image {
         transform: scale(1.02);
-    }
-}
-
-@media (max-width: 1100px) {
-    .about-talf-section {
-        padding: 90px 6% 100px;
-    }
-
-    .about-talf-header {
-        margin-bottom: 55px;
-    }
-
-    .about-talf-content {
-        grid-template-columns: 1fr;
-    }
-
-    .about-talf-values {
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 50px;
-    }
-
-    .about-talf-visual {
-        width: 100%;
-        height: auto;
-    }
-
-    .about-talf-image {
-        width: 100%;
-        height: auto;
-        max-width: none;
-        object-fit: contain;
-    }
-}
-
-@media (max-width: 700px) {
-    .about-talf-section {
-        padding: 65px 24px 80px;
-    }
-
-    .about-talf-container {
-        width: 100%;
-    }
-
-    .about-talf-header {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto 45px;
-        text-align: center;
-    }
-
-    .about-talf-title {
-        font-size: clamp(52px, 14vw, 72px);
-        line-height: 1.05;
-    }
-
-    .about-talf-intro {
-        max-width: 420px;
-        margin: 20px auto 0;
-        font-size: 16px;
-        line-height: 1.65;
-    }
-
-    .about-talf-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 0;
-        padding: 0;
-    }
-
-    /* Keep text first and image second, matching the current final CSS. */
-    .about-talf-values {
-        order: 1;
-        width: 100%;
-        max-width: 520px;
-        margin: 0 auto;
-        padding: 45px 28px;
-        gap: 32px;
-    }
-
-    .about-talf-visual {
-        order: 2;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    .about-talf-image {
-        width: 100%;
-        max-width: none;
-        height: auto;
-        margin: 0;
-        display: block;
-        object-fit: contain;
-        transform: none;
-    }
-
-    .about-value {
-        width: 100%;
-        grid-template-columns: 72px 1fr;
-        gap: 20px;
-        text-align: left;
-    }
-
-    .about-value-icon {
-        width: 68px;
-        height: 68px;
-        font-size: 30px;
-    }
-
-    .about-value-logo img {
-        width: 42px;
-        height: 42px;
-    }
-
-    .about-value-text h3 {
-        font-size: 20px;
-        line-height: 1.25;
-    }
-
-    .about-value-text p {
-        margin-top: 7px;
-        font-size: 14px;
-        line-height: 1.6;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-talf-section {
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-
-    .about-talf-values {
-        padding: 38px 20px;
-        gap: 28px;
-    }
-
-    .about-value {
-        grid-template-columns: 62px 1fr;
-        gap: 16px;
-    }
-
-    .about-value-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 26px;
-    }
-
-    .about-value-logo img {
-        width: 37px;
-        height: 37px;
-    }
-
-    .about-value-text h3 {
-        font-size: 18px;
-    }
-
-    .about-value-text p {
-        font-size: 13px;
     }
 }
 
@@ -1158,20 +731,6 @@ body {
     color: #888888;
 }
 
-@media (max-width: 700px) {
-    .site-footer {
-        padding: 45px 24px 24px;
-    }
-
-    .footer-contact-row {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-item {
-        padding: 14px 16px;
-    }
-}
-
 
 /* ========================================
    STUDIO PAGE - HERO
@@ -1243,89 +802,6 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.82);
-}
-
-@media (min-width: 701px) and (max-width: 1500px) {
-    .studio-hero-content {
-        left: 5%;
-        bottom: -10%;
-    }
-}
-
-@media (max-width: 1100px) {
-    .studio-hero-image {
-        height: 560px;
-    }
-
-    .studio-hero-content {
-        max-width: 500px;
-    }
-}
-
-@media (max-width: 700px) {
-    .studio-hero {
-        min-height: 500px;
-    }
-
-    .studio-hero-image {
-        height: 500px;
-        object-position: 58% center;
-    }
-
-    .studio-hero-overlay {
-        background: linear-gradient( 0deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.42) 55%, rgba(0, 0, 0, 0.08) 100% );
-    }
-
-    .studio-hero-content {
-        left: 24px;
-        right: 24px;
-        top: auto;
-        bottom: 45px;
-        width: auto;
-        max-width: 520px;
-        transform: none;
-    }
-
-    .studio-hero-label {
-        font-size: 20px;
-    }
-
-    .studio-hero-title {
-        font-size: 45px;
-    }
-
-    .studio-hero-description {
-        max-width: 430px;
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .studio-hero-image {
-        height: 440px;
-    }
-
-    .studio-hero-content {
-        left: 18px;
-        right: 18px;
-        bottom: 28px;
-    }
-
-    .studio-hero-label {
-        margin-bottom: 12px;
-        font-size: 11px;
-        letter-spacing: 2.5px;
-    }
-
-    .studio-hero-title {
-        font-size: 40px;
-    }
-
-    .studio-hero-description {
-        margin-top: 18px;
-        font-size: 15px;
-        line-height: 1.6;
-    }
 }
 
 
@@ -1445,7 +921,295 @@ body {
     }
 }
 
+
+
+/* ========================================
+   RESPONSIVE MEDIA QUERIES
+   Consolidated without changing tested values
+======================================== */
+
+/* COMPACT SECTION SPACING */
+@media (max-width: 1400px), (max-height: 900px) {
+    .games-section {
+        padding-top: 30px;
+    }
+
+    .games-header {
+        margin-bottom: 20px;
+    }
+
+    .coming-soon-card {
+        margin-top: 20px;
+    }
+
+    .about-talf-values {
+        padding: 35px 40px;
+        gap: 30px;
+    }
+
+    .about-value-icon {
+        width: 72px;
+        height: 72px;
+    }
+
+    .about-value {
+        grid-template-columns: 75px 1fr;
+        gap: 20px;
+    }
+}
+
+
+@media (min-width: 1101px) and (max-height: 900px) {
+    .games-section {
+        padding-top: 30px;
+    }
+
+    .about-talf-section {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+
+/* STUDIO HERO - MID RANGE */
+@media (min-width: 701px) and (max-width: 1500px) {
+    .studio-hero-content {
+        left: 5%;
+        bottom: -10%;
+    }
+}
+
+/* SHORT LANDSCAPE SCREENS */
+@media (min-width: 769px) and (max-height: 850px) {
+    /*games*/
+    .games-section {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .games-header {
+        margin-bottom: 20px;
+    }
+
+    .games-title {
+        font-size: 64px;
+    }
+
+    .games-intro {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+    .coming-soon-card {
+        min-height: 450px;
+        margin-top: 20px;
+    }
+
+    .coming-soon-image {
+        height: 450px;
+    }
+
+    .coming-soon-content {
+        padding: 35px 45px;
+    }
+
+    .coming-soon-label {
+        margin-bottom: 16px;
+    }
+
+    .coming-soon-title {
+        font-size: 56px;
+    }
+
+    .coming-soon-description {
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .coming-soon-link {
+        margin-top: 22px;
+    }
+
+
+    /* ABOUT US */
+
+    .about-talf-section {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .about-talf-header {
+        margin-bottom: 20px;
+    }
+
+    .about-talf-title {
+        font-size: 64px;
+    }
+
+    .about-talf-intro {
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-talf-content {
+        min-height: 450px;
+    }
+
+    .about-talf-values {
+        padding: 35px 45px;
+        gap: 28px;
+    }
+
+    .about-value {
+        grid-template-columns: 72px 1fr;
+        gap: 18px;
+    }
+
+    .about-value-icon {
+        width: 68px;
+        height: 68px;
+        font-size: 30px;
+    }
+
+    .about-value-logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .about-value-text h3 {
+        font-size: 20px;
+    }
+
+    .about-value-text p {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .about-talf-visual {
+        height: 450px;
+    }
+
+    .about-talf-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* TABLET / SMALL DESKTOP - 1100px */
 @media (max-width: 1100px) {
+    .hero {
+        padding: 50px 6% 70px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        max-width: 850px;
+        gap: 0;
+        padding: 0;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 45px 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-welcome,
+    .hero-title,
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .hero-title,
+    .hero-description {
+        max-width: 620px;
+    }
+
+    .hero-visual,
+    .hero-image {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero-image {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .coming-soon-card {
+        grid-template-columns: 1fr;
+    }
+
+    /* Show the complete image on tablet/mobile instead of cropping it. */
+    .coming-soon-image {
+        height: auto;
+        min-height: 0;
+    }
+
+        .coming-soon-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+    .coming-soon-content {
+        padding: 45px 35px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .coming-soon-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-talf-section {
+        padding: 90px 6% 100px;
+    }
+
+    .about-talf-header {
+        margin-bottom: 55px;
+    }
+
+    .about-talf-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-talf-values {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .about-talf-visual {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-talf-image {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        object-fit: contain;
+    }
+
+    .studio-hero-image {
+        height: 560px;
+    }
+
+    .studio-hero-content {
+        max-width: 500px;
+    }
+
     .studio-journal {
         padding: 90px 6%;
     }
@@ -1480,7 +1244,589 @@ body {
     }
 }
 
+/* TABLET LANDSCAPE - KEEP 2 COLUMNS */
+@media (min-width: 901px) and (max-width: 1100px) {
+    /* HERO */
+    .hero-container {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: none;
+        padding: 40px 35px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .hero-welcome {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .hero-title {
+        max-width: 420px;
+        margin: 30px 0 25px;
+        font-size: 58px;
+        line-height: 0.95;
+        text-align: left;
+    }
+
+    .hero-description {
+        max-width: 380px;
+        margin: 25px 0 0;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .hero-visual {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* GAMES */
+
+    .coming-soon-card {
+        grid-template-columns: 1.05fr 0.95fr;
+        min-height: 450px;
+    }
+
+    .coming-soon-image {
+        height: 450px;
+    }
+
+    .coming-soon-content {
+        padding: 30px 32px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .coming-soon-title {
+        font-size: 50px;
+    }
+
+    .coming-soon-description {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .coming-soon-image {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+    }
+
+        .coming-soon-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    .hero-container {
+        max-width: 100%;
+    }
+
+
+    /* ABOUT US - KEEP 2 COLUMNS */
+
+    .about-talf-content {
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 0;
+        width: 100%;
+        min-height: 450px;
+    }
+
+    .about-talf-values {
+        width: 100%;
+        padding: 35px 40px;
+        gap: 28px;
+    }
+
+    .about-value {
+        grid-template-columns: 72px 1fr;
+        gap: 18px;
+    }
+
+    .about-value-icon {
+        width: 68px;
+        height: 68px;
+        font-size: 30px;
+    }
+
+    .about-value-logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .about-value-text h3 {
+        font-size: 20px;
+    }
+
+    .about-value-text p {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .about-talf-visual {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    .about-talf-image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) and (max-height: 850px) {
+    .about-talf-section {
+        padding-top: 15px;
+    }
+
+    .about-talf-header {
+        margin-bottom: 20px;
+    }
+}
+
+/* TABLET / MOBILE - STACKED LAYOUT */
+@media (max-width: 900px) {
+    /*     =========================
+       HERO
+    ========================= */
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 40px 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+
+    /* =========================
+       GAMES
+    ========================= */
+
+    .coming-soon-card {
+        grid-template-columns: 1fr;
+    }
+
+    .coming-soon-image {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+        .coming-soon-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+    .coming-soon-content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 32px 30px 38px;
+    }
+
+
+    /* =========================
+       ABOUT US
+    ========================= */
+
+    .about-talf-content {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .about-talf-values {
+        order: 1;
+        width: 100%;
+    }
+
+    .about-talf-visual {
+        order: 2;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-talf-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    .about-talf-section {
+        padding-top: 5px;
+    }
+
+    .about-talf-header {
+        margin-bottom: 5px;
+    }
+
+    .hero,
+    .games-section,
+    .about-talf-section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* 768px NAV + FINAL TABLET TUNING */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar-container {
+        position: relative;
+        min-height: 64px;
+    }
+
+    .brand-logo {
+        width: 54px;
+        height: 54px;
+    }
+
+    .brand-name {
+        font-size: 34px;
+    }
+
+    .menu-toggle {
+        position: relative;
+        z-index: 1002;
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 14px;
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    }
+
+        .nav-links.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+    .nav-link {
+        width: 100%;
+        padding: 14px 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+        .nav-link::after {
+            display: none;
+        }
+
+    .menu-toggle.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .coming-soon-content {
+        padding: 30px 24px 34px;
+    }
+
+    .coming-soon-title {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+
+    .about-talf-values {
+        padding: 10px 28px;
+        gap: 26px;
+    }
+
+    .about-value {
+        gap: 18px;
+    }
+
+
+    .hero-welcome {
+        font-size: 24px;
+    }
+
+    .hero-title {
+        font-size: 55px;
+        line-height: 0.95;
+    }
+
+    .hero-description {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+
+    .hero,
+    .games-section,
+    .about-talf-section {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+/* MOBILE - 700px */
 @media (max-width: 700px) {
+    .hero {
+        padding: 24px 18px 40px;
+    }
+
+    .hero-container {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        padding: 35px 24px;
+    }
+
+    .hero-welcome {
+        margin: 0 0 24px;
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 3px;
+    }
+
+    .hero-title {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 0 28px;
+        font-size: clamp(52px, 14vw, 68px);
+        line-height: 0.95;
+        letter-spacing: 1px;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 390px;
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+    .section-transition {
+        min-height: 100px;
+        gap: 12px;
+    }
+
+    .transition-line {
+        width: 45px;
+    }
+
+    .games-section {
+        padding-top: 40px;
+    }
+
+    .about-talf-section {
+        padding-top: 10px;
+        padding-bottom: 80px;
+    }
+
+    .about-talf-container {
+        width: 100%;
+    }
+
+    .about-talf-header {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 45px;
+        text-align: center;
+    }
+
+    .about-talf-title {
+        font-size: clamp(52px, 14vw, 72px);
+        line-height: 1.05;
+    }
+
+    .about-talf-intro {
+        max-width: 420px;
+        margin: 20px auto 0;
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .about-talf-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+    }
+
+    /* Keep text first and image second, matching the current final CSS. */
+    .about-talf-values {
+        order: 1;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 45px 28px;
+        gap: 32px;
+    }
+
+    .about-talf-visual {
+        order: 2;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .about-talf-image {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        margin: 0;
+        display: block;
+        object-fit: contain;
+        transform: none;
+    }
+
+    .about-value {
+        width: 100%;
+        grid-template-columns: 72px 1fr;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .about-value-icon {
+        width: 68px;
+        height: 68px;
+        font-size: 30px;
+    }
+
+    .about-value-logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .about-value-text h3 {
+        font-size: 20px;
+        line-height: 1.25;
+    }
+
+    .about-value-text p {
+        margin-top: 7px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .site-footer {
+        padding: 45px 24px 24px;
+    }
+
+    .footer-contact-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-item {
+        padding: 14px 16px;
+    }
+
+    .studio-hero {
+        min-height: 500px;
+    }
+
+    .studio-hero-image {
+        height: 500px;
+        object-position: 58% center;
+    }
+
+    .studio-hero-overlay {
+        background: linear-gradient( 0deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.42) 55%, rgba(0, 0, 0, 0.08) 100% );
+    }
+
+    .studio-hero-content {
+        left: 24px;
+        right: 24px;
+        top: auto;
+        bottom: 45px;
+        width: auto;
+        max-width: 520px;
+        transform: none;
+    }
+
+    .studio-hero-label {
+        font-size: 20px;
+    }
+
+    .studio-hero-title {
+        font-size: 45px;
+    }
+
+    .studio-hero-description {
+        max-width: 430px;
+        font-size: 16px;
+    }
+
     .studio-journal {
         padding: 65px 24px 75px;
     }
@@ -1519,9 +1865,138 @@ body {
         padding-right: 10px;
         font-size: 32px;
     }
+
+    .games-section,
+    .about-talf-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .games-container,
+    .about-talf-container {
+        width: 100%;
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+
+    .coming-soon-card,
+    .about-talf-box {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
 }
 
+/* SMALL MOBILE - 480px */
 @media (max-width: 480px) {
+    .hero-container {
+        border-radius: 14px;
+    }
+
+    .hero-text {
+        padding: 30px 18px;
+    }
+
+    .hero-welcome {
+        margin-bottom: 20px;
+        font-size: 16px;
+        letter-spacing: 2.5px;
+    }
+
+    .hero-title {
+        max-width: 360px;
+        margin-bottom: 24px;
+        font-size: clamp(50px, 15vw, 60px);
+        line-height: 0.94;
+    }
+
+    .hero-description {
+        max-width: 340px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .coming-soon-card {
+        margin-top: 35px;
+        border-radius: 14px;
+    }
+
+    .coming-soon-content {
+        padding: 38px 22px;
+    }
+
+    .coming-soon-title {
+        font-size: 52px;
+    }
+
+    .coming-soon-description {
+        font-size: 15px;
+    }
+
+    .about-talf-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .about-talf-values {
+        padding: 38px 20px;
+        gap: 28px;
+    }
+
+    .about-value {
+        grid-template-columns: 62px 1fr;
+        gap: 16px;
+    }
+
+    .about-value-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+    }
+
+    .about-value-logo img {
+        width: 37px;
+        height: 37px;
+    }
+
+    .about-value-text h3 {
+        font-size: 18px;
+    }
+
+    .about-value-text p {
+        font-size: 13px;
+    }
+
+    .studio-hero-image {
+        height: 440px;
+    }
+
+    .studio-hero-content {
+        left: 18px;
+        right: 18px;
+        bottom: 28px;
+    }
+
+    .studio-hero-label {
+        margin-bottom: 12px;
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+    .studio-hero-title {
+        font-size: 40px;
+    }
+
+    .studio-hero-description {
+        margin-top: 18px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
     .studio-journal {
         padding-left: 18px;
         padding-right: 18px;
@@ -1543,4 +2018,46 @@ body {
     .studio-entry-caption {
         font-size: 28px;
     }
+
+
+    .games-title {
+        font-size: clamp(52px, 14vw, 72px);
+        line-height: 1.05;
+    }
+
+    .games-intro {
+        max-width: 420px;
+        margin: 20px auto 0;
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
 }
+
+
+
+
+/* ========================================
+   SHARED SECTION WIDTH
+======================================== */
+
+/*.hero,
+.games-section,
+.about-talf-section {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+*/
+
+.hero-container,
+.games-container,
+.about-talf-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.coming-soon-card {
+    width: 100%;
+}
+

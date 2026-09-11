@@ -8,11 +8,7 @@
     box-sizing: border-box;
 }
 
-html {
-    min-height: 100%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-}
+
 
 body {
     min-height: 100vh;
@@ -959,6 +955,18 @@ body {
 }
 
 
+/*@media (min-width: 1101px) and (max-height: 950px) {
+    .about-talf-section {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .about-talf-header {
+        margin-bottom: 30px;
+    }
+}*/
+
+
 @media (min-width: 1101px) and (max-height: 900px) {
     .games-section {
         padding-top: 30px;
@@ -968,6 +976,8 @@ body {
         padding-top: 30px;
         padding-bottom: 50px;
     }
+
+
 }
 
 /* STUDIO HERO - MID RANGE */
@@ -2059,5 +2069,11 @@ body {
 
 .coming-soon-card {
     width: 100%;
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
